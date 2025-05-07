@@ -2,29 +2,7 @@
 
 A minimal MCP server that provides tools such as `getElevation` to interact with geographical data.
 
-## Setup
-
-1. Clone this repository:
-   ```bash
-   git clone git@github.com:toshihikoyanase/geo-mcp-server.git
-   cd geo-mcp-server
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-## Usage
-
-Run the server:
-
-```bash
-npx ts-node src/index.ts
-```
-
-The server will run using standard input/output (stdio).
-
-### Setting Claude Desktop
+## Use Claude Desktop
 
 Add your servers in the `mcpServers` key of Claude Desktop configuration.
 
@@ -34,8 +12,7 @@ Add your servers in the `mcpServers` key of Claude Desktop configuration.
       "geo": {
          "command": "npx",
          "args": [
-            "ts-node",
-            "/absolute/path/to/geo-mcp-server/src/index.ts"
+            "github.com/toshihikoyanase/geo-mcp-server"
          ]
       }
    }
@@ -54,6 +31,35 @@ Add your servers in the `mcpServers` key of Claude Desktop configuration.
 
 **Output**:
 - Returns the elevation in meters for the specified coordinates.
+
+## Development
+
+## Setup
+
+1. Clone this repository:
+   ```bash
+   git clone git@github.com:toshihikoyanase/geo-mcp-server.git
+   cd geo-mcp-server
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Build the project:
+   ```bash
+   npm run build
+   ```
+
+## Usage
+
+Run the server:
+
+```bash
+npm start
+```
+
+The server will run using standard input/output (stdio).
+
 
 ## License
 
