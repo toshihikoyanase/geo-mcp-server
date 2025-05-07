@@ -1,17 +1,20 @@
 {
   "name": "geo-mcp-server",
   "version": "0.1.0",
-  "description": "A minimal Python HTTP server that returns elevation for a pair of latitude and longitude coordinates.",
+  "description": "A minimal MCP server that returns elevation for a pair of latitude and longitude coordinates.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "bin": "dist/index.js",
+  "bin": {
+    "geo-mcp-server": "dist/index.js"
+  },
   "devDependencies": {
     "@types/node": "^22.15.3",
     "typescript": "^5.8.3",
