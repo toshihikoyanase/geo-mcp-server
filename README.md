@@ -12,7 +12,7 @@ Add your servers in the `mcpServers` key of Claude Desktop configuration.
       "geo": {
          "command": "npx",
          "args": [
-            "github.com/toshihikoyanase/geo-mcp-server"
+            "github.com:toshihikoyanase/geo-mcp-server"
          ]
       }
    }
