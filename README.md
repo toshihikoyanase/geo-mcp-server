@@ -1,4 +1,4 @@
-# MCP Geo Server
+# Geo MCP Server
 
 A minimal MCP server that provides tools such as `getElevation` to interact with geographical data.
 For retrieving elevation data based on latitude and longitude, it utilizes the [Geospatial Information Authority of Japan API](https://maps.gsi.go.jp/development/elevation_s.html).
