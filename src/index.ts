@@ -44,9 +44,14 @@ server.tool(
         content: [
           {
             type: "text",
-            text: `The elevation at latitude ${lat} and longitude ${lon} is ${data.elevation} meters.`,
+            text: JSON.stringify({
+              elevation: data.elevation,
+              lat,
+              lon,
+            }, null, 2),
           },
         ],
+        isError: false
       };
     } catch (error) {
       let errorMessage = "";
@@ -62,6 +67,7 @@ server.tool(
             text: `Error fetching elevation data: ${errorMessage}`,
           },
         ],
+        isError: true
       };
     }
   }
