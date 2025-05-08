@@ -1,6 +1,7 @@
 # MCP Geo Server
 
 A minimal MCP server that provides tools such as `getElevation` to interact with geographical data.
+For retrieving elevation data based on latitude and longitude, it utilizes the [Geospatial Information Authority of Japan API](https://maps.gsi.go.jp/development/elevation_s.html).
 
 ## Use Claude Desktop
 
@@ -64,3 +65,10 @@ The server will run using standard input/output (stdio).
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+## Acknowledgments
+
+This software leverages the Elevation API provided by the [Geospatial Information Authority of Japan (GSI)](https://maps.gsi.go.jp/development/elevation_s.html).
+
+We appreciate GSI’s efforts in maintaining this service. Please ensure your own use of the API complies with GSI’s [terms of use](https://maps.gsi.go.jp/development/elevation_s.html#attention) and handle the data responsibly.
