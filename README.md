@@ -21,6 +21,12 @@ See the [official document of the Model Context Protocol](https://modelcontextpr
 }
 ```
 
+### Example Usage: Retrieving Elevation for Tokyo Metropolitan Government Office
+
+Below is an example of how to use the Geo MCP Server to find the elevation based on the latitude and longitude of the Tokyo Metropolitan Government Office.
+
+![Screenshot: Using the Geo MCP Server in Claude Desktop.](docs/images/claude-desktop-tokyo-example.png)
+
 ## Configuration for VS Code Copilot Agent
 
 Add this server under the `servers` key in your MCP configuration for VS Code.
