@@ -3,9 +3,10 @@
 A minimal MCP server that provides tools such as `getElevation` to interact with geographical data.
 For retrieving elevation data based on latitude and longitude, it utilizes the [Geospatial Information Authority of Japan API](https://maps.gsi.go.jp/development/elevation_s.html).
 
-## Use Claude Desktop
+## Configuration for Claude Desktop
 
-Add your servers in the `mcpServers` key of Claude Desktop configuration.
+Add this server under the `mcpServers` key of Claude Desktop configuration.
+See the [official document of the Model Context Protocol](https://modelcontextprotocol.io/quickstart/user) for details.
 
 ```json
 {
@@ -19,6 +20,26 @@ Add your servers in the `mcpServers` key of Claude Desktop configuration.
    }
 }
 ```
+
+## Configuration for VS Code Copilot Agent
+
+Add this server under the `servers` key in your MCP configuration for VS Code.
+For example, to enable the MCP server in your workspace, create a `.vscode/mcp.json` file as follows:
+
+```json
+{
+    "servers": {
+        "geo": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "https://github.com/toshihikoyanase/geo-mcp-server.git",
+            ]
+        }
+    }
+}
+```
+
 
 ## API
 
